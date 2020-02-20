@@ -1,0 +1,42 @@
+// grid colums
+
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:2em;
+}
+.col-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+}
+/* landscape mobile */
+@media screen and (min-width:37.5em) {
+    .col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
+    .col-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+// fartölvur 
+@media screen and (min-width:60em) {
+    .container {
+        max-width: 70em;
+        margin: 0 auto;
+    }
+    .col-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap:2em;
+    }
+    .col-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:2em;
+    }
+}

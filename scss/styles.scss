@@ -1,0 +1,44 @@
+
+@mixin bradius5{
+    border-radius: .5em;
+    border: 1px solid rgb(126, 126, 126);
+}
+
+body {
+    background-color: bisque;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    margin-top: 3em;
+}
+.mybutton {
+    background: red;
+    font-size: 1em;
+    color:white;
+    padding: .5em 1em;
+    margin: 1em;
+}
+.shybutton {
+    background: #f7786b;
+    font-size: 0.75em;
+}
+
+.card {
+    @include bradius5;
+    background-color: #fff;
+    box-shadow: -5px 10px 10px #afaca8;
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.stretch {
+    display: grid;
+    justify-self: stretch;
+}
+
+@import 'layout' 
