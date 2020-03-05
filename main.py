@@ -15,7 +15,8 @@ POSTS = {
 }
 # tilgreina template
 env = Environment(loader=PackageLoader('main', 'templates'))
-home_template = env.get_template('home.html')
+index_template = env.get_template('index.html')
+home_template = env.get_template('bread.html')
 post_template = env.get_template('post.html')
 
 
